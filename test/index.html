@@ -22,6 +22,11 @@
       it('calculates value different from 128 from 8 and 7 arguments', function() {
         expect(calculate(8, 7)).not.to.equal(128)
       });
+
+      it('inform that the result 128 is positive', function() {
+        expect(getInfo(128)).to.equal('The result is positive');
+      });
+
     });
   </script>
   <script>
