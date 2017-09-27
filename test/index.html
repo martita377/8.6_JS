@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>Mocha Tests</title>
-  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet">
 </head>
 <body>
   <div id="mocha"></div>
@@ -22,13 +22,15 @@
       it('calculates value different from 128 from 8 and 7 arguments', function() {
         expect(calculate(8, 7)).not.to.equal(128)
       });
+    });
 
+    describe('#getInfo()', function() {
       it('inform that the result 128 is positive', function() {
-        expect(getInfo(128)).to.equal('The result is positive');
+        expect(getInfo(128)).to.equal('The result is positive')
       });
 
-      it('inform that the result -5 is negative', function() {
-        expect(getInfo(-5)).to.equal('The result is negative');
+      it('inform that the -3 is negative', function() {
+        expect(getInfo(-3)).to.equal('The result is negative')
       });
 
     });
