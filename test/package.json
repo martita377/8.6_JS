@@ -1,0 +1,19 @@
+{
+  "name": "kodilla-test",
+  "version": "1.0.0",
+  "description": "grunt-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Marta P",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
