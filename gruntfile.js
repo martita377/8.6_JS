@@ -7,7 +7,8 @@ module.exports = function(grunt) {
       dev: {
         bsFiles: {
            src : [
-            '*.html'
+            'index.html',
+            'js/*.js'
            ]
         },
         options: {
@@ -19,7 +20,10 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['*.html, *.js'],
+        files: [
+          '*.html', 
+          'js/*.js'
+        ],
         tasks: ['browserSync'],
         options: {
             spawn: false,
@@ -28,11 +32,11 @@ module.exports = function(grunt) {
     }
 
   });
+
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-
   grunt.registerTask('default', ['browserSync', 'watch']);
 };

@@ -1,20 +1,18 @@
-var info = getInfo(rValue);
-var rValue = calculate(a, b);
 function fun(a, b) {
-
-	document.getElementById('result').value = rValue;
-
-	getInfo(rValue);
+	var result = calculate(a, b);
 	
-	alert(info);
-	console.log('The result with variable a =' + a + ' and b = ' + b + ' is ' + rValue + ', ' + info);
+	document.getElementById('result').value =  result;
+
+	alert(getInfo(result));
 }
 
 function calculate(a, b) {
-	return (a * a) + (2 * a * b) - (b * b);
+	return (a * a) + (2 * a * b) - (b * b)
 }
 
 function getInfo(rValue) {
+	var info;
+
 	if (rValue > 0) {
 		info = 'The result is positive';
 	} else if (rValue < 0) {
